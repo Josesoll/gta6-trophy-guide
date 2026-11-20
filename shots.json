@@ -1,5 +1,1 @@
-[
-  { "file": "1-checklist.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-silver.jpg", "path": "/", "grade": "silver", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-bronze.jpg", "path": "/", "grade": "bronze", "scroll": 1400, "viewport": { "width": 1280, "height": 800 } }
-]
+[{"file":"01-cover-checklist-guide.jpg","view":"checklist with the guide and sources for Baited My Tackle open beside it, progress seeded to 13 of 55 earned with counters part way, filters and export/import visible","viewport":{"height":900,"width":1280}},{"file":"02-roadmap-platinum.jpg","view":"roadmap to the platinum: nine stages in order, stage 1 complete at 4 of 4 earned","viewport":{"height":900,"width":1280}},{"file":"03-missable-trophies.jpg","view":"missable trophies flagged: every flagged trophy with its official description and when it can be missed","viewport":{"height":900,"width":1280}},{"file":"04-spoiler-protection.jpg","view":"spoiler protection on: unearned story trophies show as Hidden story trophy in the checklist and in the guide panel, earned story trophies stay revealed","viewport":{"height":900,"width":1280}}]
