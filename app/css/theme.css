@@ -1,0 +1,52 @@
+/* Leonida Legend — theme: deep Leonida night with sunset coral and gold.
+   An original look for this guide: no Rockstar logo, artwork or game imagery. */
+:root {
+  --ink: #17202b;
+  --paper: #f6f1e7;
+  --card: #fffdf8;
+  --line: #d9cfba;
+  --accent: #c93a5e;
+  --accent-ink: #ffffff;
+  --gold: #b8860b;
+  --silver: #5f7186;
+  --bronze: #9c5a24;
+  --platinum: #31536e;
+  --warn-bg: #fdeeda;
+  --warn-line: #e0a458;
+  --warn-ink: #6d3d05;
+}
+body { background: var(--paper); color: var(--ink); }
+.site-header { background: #17202b; color: #f6f1e7; }
+.site-header h1 { color: #ffb37a; }
+.tagline { color: #d8dee8; }
+.progress-bar { background: #39445a; }
+.progress-fill { background: linear-gradient(90deg, #c93a5e, #ff8c5a); }
+.grade-tally { color: #d8dee8; }
+.toolbar { background: #efe6d2; border-bottom: 1px solid var(--line); }
+.toolbar input[type="search"], .toolbar select, .counter-row input {
+  background: var(--card); color: var(--ink); border: 1px solid var(--line);
+}
+button, .import-label {
+  background: var(--card); color: var(--ink); border: 1px solid var(--line);
+}
+button:hover, .import-label:hover { border-color: var(--accent); }
+.view-tabs button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.trophy-card { background: var(--card); border: 1px solid var(--line); color: var(--ink); }
+.trophy-card.is-earned { border-color: #7ba05b; background: #f2f7ea; }
+.trophy-card.is-selected { outline: 2px solid var(--accent); }
+.trophy-desc { color: #45536a; }
+.badge-grade-platinum { background: var(--platinum); color: #fff; }
+.badge-grade-gold { background: var(--gold); color: #fff; }
+.badge-grade-silver { background: var(--silver); color: #fff; }
+.badge-grade-bronze { background: var(--bronze); color: #fff; }
+.badge-kind { background: #e7ddc6; color: #4c4230; }
+.badge-missable { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid var(--warn-line); }
+.badge-earned { background: #7ba05b; color: #fff; }
+.guide-panel { background: var(--card); border: 1px solid var(--line); box-shadow: 0 4px 18px rgba(23, 32, 43, 0.12); }
+.missable-note { background: var(--warn-bg); border: 1px solid var(--warn-line); color: var(--warn-ink); }
+.empty-state { background: var(--card); border: 1px dashed var(--line); }
+.roadmap-stage, .missable-card { background: var(--card); border: 1px solid var(--line); }
+.stage-when { color: var(--accent); }
+.site-footer { color: #45536a; border-top: 1px solid var(--line); }
+.spoiler-veil { color: #8a93a5; font-style: italic; }
+a { color: var(--accent); }

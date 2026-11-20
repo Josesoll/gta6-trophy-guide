@@ -1,0 +1,66 @@
+/* Leonida Legend — base layout and structure. Theme colours live in theme.css. */
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.45;
+}
+.site-header { padding: 20px 20px 12px; }
+.site-header h1 { margin: 0 0 4px; font-size: 1.7rem; letter-spacing: 0.2px; }
+.tagline { margin: 0 0 12px; max-width: 62ch; }
+.progress-wrap { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.progress-bar { flex: 1 1 220px; height: 14px; border-radius: 999px; overflow: hidden; }
+.progress-fill { height: 100%; width: 0%; transition: width 0.25s ease; }
+.progress-text { font-weight: 700; white-space: nowrap; }
+.grade-tally { font-size: 0.9rem; }
+.toolbar {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: end;
+  padding: 12px 20px;
+}
+.toolbar label { display: flex; flex-direction: column; gap: 4px; font-size: 0.82rem; font-weight: 600; }
+.toolbar input[type="search"], .toolbar select {
+  font: inherit; font-size: 0.95rem; padding: 7px 9px; border-radius: 8px; min-height: 38px;
+}
+.toolbar input[type="search"] { min-width: 210px; }
+button, .import-label {
+  font: inherit; font-size: 0.92rem; padding: 8px 13px; border-radius: 8px;
+  cursor: pointer; min-height: 38px; display: inline-flex; align-items: center;
+}
+.import-label input { display: none; }
+.spoiler-toggle { flex-direction: row !important; align-items: center; gap: 7px !important; padding-bottom: 9px; }
+.spoiler-toggle input { width: 18px; height: 18px; }
+.view-tabs { display: flex; gap: 8px; padding: 12px 20px 0; flex-wrap: wrap; }
+.view-tabs button[aria-selected="true"] { font-weight: 700; }
+main { padding: 14px 20px 30px; }
+.checklist-layout { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 18px; align-items: start; }
+@media (max-width: 900px) { .checklist-layout { grid-template-columns: 1fr; } }
+.trophy-list { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.trophy-card {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px;
+  padding: 10px 12px; border-radius: 10px; text-align: left; width: 100%;
+  font: inherit; cursor: pointer; align-items: start;
+}
+.trophy-card input[type="checkbox"] { width: 20px; height: 20px; margin-top: 2px; }
+.trophy-name { font-weight: 700; display: block; }
+.trophy-desc { display: block; font-size: 0.92rem; }
+.trophy-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 5px; }
+.badge { font-size: 0.72rem; font-weight: 700; padding: 2px 7px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.4px; }
+.counter-row { display: flex; align-items: center; gap: 7px; margin-top: 7px; font-size: 0.88rem; }
+.counter-row button { min-height: 30px; padding: 2px 10px; }
+.counter-row input { width: 74px; font: inherit; padding: 4px 6px; border-radius: 6px; }
+.guide-panel { position: sticky; top: 12px; padding: 16px; border-radius: 12px; }
+.guide-panel h2 { margin: 0 40px 4px 0; font-size: 1.25rem; }
+.guide-panel h3 { margin: 16px 0 5px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.guide-panel p { margin: 6px 0; }
+.guide-close { position: absolute; top: 10px; right: 10px; }
+.guide-panel-wrap { position: relative; }
+.missable-note { padding: 9px 11px; border-radius: 8px; }
+.empty-state { padding: 22px; border-radius: 10px; }
+.roadmap-stage, .missable-card { padding: 14px 16px; border-radius: 12px; margin-bottom: 12px; }
+.roadmap-stage h3, .missable-card h3 { margin: 0 0 6px; }
+.roadmap-stage ul { margin: 8px 0 0; padding-left: 20px; }
+.roadmap-stage li { margin: 3px 0; }
+.stage-when { font-size: 0.88rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
+.site-footer { padding: 14px 20px 24px; font-size: 0.86rem; }
+.spoiler-hidden .trophy-name, .spoiler-hidden .trophy-desc { user-select: none; }
